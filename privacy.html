@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이버디 개인정보처리방침</title>
+<meta name="description" content="페이버디(PayBuddy)는 가계부·카드 데이터를 서버로 보내지 않습니다. 모든 기록은 기기 안에만 저장됩니다.">
+<style>
+:root{
+  --ground:#F6F8F7;--paper:#fff;--ink:#0E1C19;--dim:#54655F;
+  --line:#DCE5E2;--brand:#115E59;--brand-soft:#E3EFEC;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ground:#0C1614;--paper:#111F1C;--ink:#E6EFEC;--dim:#93A8A2;
+        --line:#22332F;--brand:#5EC8BC;--brand-soft:#15302C}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font:400 16px/1.8 "Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+h1{font-size:28px;line-height:1.3;margin:0 0 10px;font-weight:700;letter-spacing:-.02em}
+.app{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);
+  font-weight:700;margin:0 0 12px}
+.updated{font-size:14px;color:var(--dim);margin:0}
+.summary{background:var(--brand-soft);border-radius:12px;padding:20px 22px;margin:28px 0 8px;
+  font-size:16.5px;line-height:1.8}
+.summary b{font-weight:700}
+h2{font-size:19px;margin:40px 0 12px;font-weight:700;letter-spacing:-.01em;
+  padding-bottom:8px;border-bottom:1px solid var(--line)}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:20px}
+li{margin-bottom:8px}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;font-size:15px;color:var(--dim);margin:16px 0}
+a{color:var(--brand)}
+footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:14px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="app">PayBuddy · 페이버디</p>
+  <h1>개인정보처리방침</h1>
+  <p class="updated">최종 개정일 2026년 9월 7일</p>
+</header>
+
+<p class="summary">
+  페이버디는 사용자의 가계부·카드 데이터를 <b>서버로 보내지 않습니다.</b>
+  모든 기록은 이 기기 안에만 저장되며, 앱을 지우면 함께 사라집니다.
+  저희는 사용자의 데이터를 <b>가지고 있지 않습니다.</b>
+</p>
+
+<h2>1. 수집하는 정보</h2>
+<ul>
+  <li>직접 입력한 가계부 내역 · 카드 정보 · 고정지출</li>
+  <li>사용자가 붙여넣거나, 권한을 허용한 경우 자동으로 읽은 결제 문자·앱 알림에서
+      뽑아낸 금액·가맹점·일시</li>
+</ul>
+<p>
+  결제 문자의 <b>원문은 저장하지 않습니다.</b> 같은 문자를 두 번 기록하지 않기 위한
+  SHA-256 해시만 남기며, 해시로는 원문을 되돌릴 수 없습니다.
+</p>
+<p>
+  이름·전화번호·이메일·계좌번호 등 개인을 식별하는 정보를 요구하지 않습니다.
+  회원가입이 없고 계정도 없습니다.
+</p>
+
+<h2>2. 저장 방식</h2>
+<p>
+  모든 데이터는 기기 안의 암호화된 데이터베이스(SQLCipher)에 저장됩니다.
+  암호화 키는 Android 키 저장소(Keystore)에 보관되며 앱 밖으로 나가지 않습니다.
+</p>
+
+<h2>3. 외부로 나가는 통신</h2>
+<p>
+  앱이 네트워크를 쓰는 경우는 하나뿐입니다 — 카드 혜택·실적 기준과 문자 인식 규칙을
+  최신화하기 위해 공개 저장소에서 데이터 파일을 <b>내려받는 것</b>입니다.
+  내려받기만 하며, 이때도 사용자의 어떤 정보도 함께 보내지 않습니다.
+</p>
+<p>
+  광고·분석·크래시 리포팅 도구를 넣지 않았습니다.
+  사용 기록을 수집하거나 제3자에게 제공하지 않습니다.
+</p>
+
+<h2>4. 권한</h2>
+<ul>
+  <li><b>결제 문자 읽기 · 다른 앱 알림 읽기</b> — 결제 내역 자동 입력에만 씁니다.
+      허용하지 않아도 직접 입력·붙여넣기로 모든 기능을 쓸 수 있습니다.</li>
+  <li><b>알림 표시</b> — 페이버디가 혜택·마감 알림을 보내기 위해 필요합니다.
+      위의 "다른 앱 알림 읽기"와는 다른 권한입니다.</li>
+  <li><b>생체 인증</b> — 앱 잠금을 켠 경우, 기기의 지문·얼굴·PIN으로 확인하는 데만 씁니다.
+      페이버디는 앱 전용 비밀번호를 만들지 않으며 어떤 인증 정보도 저장하지 않습니다.</li>
+  <li><b>인터넷</b> — 위 3번의 데이터 내려받기에만 씁니다.</li>
+</ul>
+<p>
+  읽어 들인 문자는 기기 안에서 바로 해석하고 버립니다.
+  문자 내용이 기기 밖으로 나가는 경로는 없습니다.
+</p>
+<div class="note">
+  읽지 못한 문자는 직접 넣으실 수 있도록 그 알림이 떠 있는 동안만 기기 안에 남습니다.
+  알림을 지우거나 휴대폰을 다시 켜면 사라지며, 파일이나 데이터베이스에 저장되지 않습니다.
+</div>
+
+<h2>5. 데이터 삭제</h2>
+<p>
+  앱을 삭제하면 저장된 모든 데이터가 함께 지워집니다.
+  서버에 남는 사본이 없으므로 별도의 삭제 요청 절차가 필요하지 않습니다.
+</p>
+<p>
+  사용자가 직접 만든 백업 파일은 사용자의 기기·저장소에 있으며, 그 파일의 관리와 삭제는
+  사용자에게 달려 있습니다. 백업 파일은 사용자가 정한 암호로 암호화되며,
+  <b>그 암호를 잊으면 저희도 되살려 드릴 수 없습니다.</b>
+</p>
+
+<h2>6. 만 14세 미만</h2>
+<p>
+  페이버디는 만 14세 미만 아동을 대상으로 하지 않으며,
+  아동의 개인정보를 의도적으로 수집하지 않습니다.
+</p>
+
+<h2>7. 면책</h2>
+<p>
+  카드 혜택·실적 정보는 공개된 자료를 바탕으로 한 <b>참고용 추정치</b>이며,
+  카드사의 실제 산정과 다를 수 있습니다. 최종 확인은 카드사 안내를 따라 주세요.
+</p>
+<p>
+  특히 전월 실적 구간에 따라 할인·적립률이 달라지는 카드는 구간을 잘못 읽는 경우가 있습니다.
+  페이버디는 <b>실적을 놓치지 않게 돕는 것</b>을 목표로 하며,
+  모든 구간의 혜택 금액을 정확히 계산하지는 못합니다.
+</p>
+
+<h2>8. 방침 변경</h2>
+<p>
+  이 방침이 바뀌면 이 페이지와 앱 안 「설정 → 앱 정보·약관」에 함께 반영하고,
+  개정일을 위에 적습니다.
+</p>
+
+<h2>9. 문의</h2>
+<p>
+  개인정보 처리에 관한 문의는 아래로 보내 주세요.<br>
+  <a href="mailto:paybuddy.help@gmail.com">paybuddy.help@gmail.com</a>
+</p>
+
+<footer>
+  PayBuddy · 페이버디 &nbsp;·&nbsp; 이 문서는 앱 안 「설정 → 앱 정보·약관」의 내용과 같습니다.
+</footer>
+
+</div>
+</body>
+</html>
