@@ -19,6 +19,9 @@ PayBuddy 앱이 내려받는 데이터 배포용 저장소입니다.
 
 `.pbd`는 PayBuddy 앱 전용 형식이며, 앱 외부에서 사용할 수 없습니다.
 
+`privacy.html` 도 함께 있습니다. 이것은 앱 데이터가 아니라 **개인정보처리방침**이며,
+GitHub Pages 로 공개됩니다 — https://paybuddy.github.io/paybuddy-dist/privacy.html
+
 ## 갱신
 
 앱의 **설정 → 데이터 업데이트**에서 최신 파일을 받아 갑니다.
